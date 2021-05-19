@@ -1,0 +1,30 @@
+<ion-header>
+    <ion-row id="Menu">
+        <ion-col (click)="goToMenu()" size="2">
+            <ion-icon id="avatar" name="person-circle"></ion-icon>
+
+        </ion-col>
+        <ion-col size="8">
+            <div style="text-align: center;">
+                <h5 id="titre">SportPerformance</h5>
+            </div>
+
+        </ion-col>
+        <ion-col (click)="goToHistoric()" size="2">
+
+            <ion-icon id="course" name="bookmark"></ion-icon>
+
+        </ion-col>
+
+
+
+    </ion-row>
+</ion-header>
+
+<ion-content>
+    <div (click)="goToCourse()" style="height: 200px; border: 1px solid #7F21A0; border-radius: 1000px; width: 200px; margin: auto; margin-top: 50%; text-align: center;  background-color: #7F21A0; color: #ffffff; font-weight: 600;">
+        <h1 style="margin-top: 40%;">GO RUN</h1>
+    </div>
+
+
+</ion-content>

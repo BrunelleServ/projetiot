@@ -1,0 +1,42 @@
+<ion-header>
+    <ion-toolbar style="color: #ffffff;">
+        <ion-title>Resultats de ma course</ion-title>
+        <ion-icon id="quitter" (click)="closeModal()" name="close" size="2"></ion-icon>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <section>
+        <div style="margin: 30px; font-size: 18px; font-weight: 600;">
+            Temps: {{courses.temps}} minutes
+        </div>
+        <div style="margin: 30px; font-size: 18px; font-weight: 600;">
+            Kilomètres: {{courses.kilometre}} km
+        </div>
+        <div style="margin: 30px; font-size: 18px; font-weight: 600;">
+            Battements par minutes: {{courses.battmentsPM}}
+        </div>
+        <div style="margin: 30px; font-size: 18px; font-weight: 600;">
+            O2/L: {{courses.o2l}}
+        </div>
+        <div style="margin: 30px; font-size: 18px; font-weight: 600;">
+            Nombre de pas: {{courses.nombreDP}}
+        </div>
+    </section>
+    <section>
+        <ion-toolbar style="color: #ffffff;">
+            <ion-title>Commentaires</ion-title>
+        </ion-toolbar>
+    </section>
+    <ion-list id="commentaire" style="padding-right: 18px; ">
+        <ion-item *ngFor="let commentaire of courses.commentaires">
+            {{commentaire}}
+        </ion-item>
+
+    </ion-list>
+
+
+
+
+</ion-content>
